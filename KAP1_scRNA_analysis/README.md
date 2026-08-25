@@ -6,8 +6,8 @@ Analysis workflow for the scRNA-seq dataset from mouse mammary gland (WT vs. Kap
 
 Scripts, run in order:
 
-| Script | Description | Main outputs |
-|---|---|---|
+| Script | Description
+|---|---|
 | `00_Install_Packages.R` | One-time R package installation 
 | `01_Preprocessing_QC.R` | Per-sample QC, normalisation, clustering and scoring 
 | `02_Integration.R` | CCA integration, clustering and cell-type annotation 
@@ -50,15 +50,6 @@ Set `DATA_DIR` in `config.R` to the directory containing the per-sample CellRang
 ```text
 <DATA_DIR>/<sample>/outs/filtered_feature_bc_matrix/
 ```
-
-### Annotation files
-
-The following files are provided:
-
-- `PosSigGenes.RData` — contains the `MS2`, `LP2` and `ML2` signature gene sets used for Basal/LP/ML scoring.
-- `MouseSignatureGenes_CellTypes.csv` — mouse cell-type marker annotation.
-- `Mus_musculus.gene_info.gz` — NCBI mouse gene annotation used for gene filtering and Entrez ID mapping.
-- `GSE227750_Mouse-SigGenes.RData` — contains the `Basal_up`, `LP_up` and `ML_up` signature gene sets used for ATAC gene-activity scoring.
 
 ## Running the pipeline
 
