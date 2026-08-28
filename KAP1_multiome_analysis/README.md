@@ -9,12 +9,12 @@ Scripts, run in order:
 | Script | Description 
 |---|---|
 | `00_Install_Packages.R` | One-time R package installation | — |
-| `01_Preprocessing_QC.R` | Per-sample QC (RNA + ATAC), doublet removal (AMULET) 
-| `02_Integration.R` | RNA-side CCA integration, clustering and cell-type annotation 
-| `03_ATAC_Peak_Calling_and_Integration.R` | Cell-type-aware MACS2 peak calling (external) and Harmony ATAC integration, label transfer, peak-to-gene linking 
-| `04_scATAC.R` | ATAC UMAP, gene-activity scores and signature/marker exploration |
-| `05_Pseudobulk_DE_DA.R` | Cell-type pseudobulk RNA DE (edgeR) and ATAC DA (csaw + edgeR), GO/KEGG analysis 
-| `06_Pseudobulk_DE.R` | Pseudobulk limma-voom DE restricted to cycling vs. parental epithelial subclusters 
+| `01_Preprocessing_QC.R` | Per-sample QC, doublet removal (AMULET) 
+| `02_Integration.R` | RNA integration, clustering and cell-type annotation 
+| `03_ATAC_Peak_Calling_and_Integration.R` | MACS2 peak calling and ATAC integration, label transfer, peak-to-gene linking 
+| `04_scATAC.R` | ATAC UMAP, gene-activity scores and marker gene exploration |
+| `05_Pseudobulk_DE_DA.R` | Pseudobulk RNA DE and ATAC DA of KO vs WT, GO/KEGG analysis 
+| `06_Pseudobulk_DE.R` | Pseudobulk RNA DE of cycling vs. parental epithelial populations
 
 `setup.R` and `config.R` are sourced in Scripts 01–06 automatically:  
 - `setup.R` defines packages, annotations, palettes and scoring helper functions;  
