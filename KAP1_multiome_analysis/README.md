@@ -8,8 +8,8 @@ Scripts, run in order:
 
 | Script | Description 
 |---|---|
-| `00_Install_Packages.R` | One-time R package installation | — |
-| `01_Preprocessing_QC.R` | Per-sample QC, doublet removal (AMULET) 
+| `00_Install_Packages.R` | R package installation | — |
+| `01_Preprocessing_QC.R` | Per-sample QC
 | `02_Integration.R` | RNA integration, clustering and cell-type annotation 
 | `03_ATAC_Peak_Calling_and_Integration.R` | MACS2 peak calling and ATAC integration, label transfer, peak-to-gene linking 
 | `04_scATAC.R` | ATAC UMAP, gene-activity scores and marker gene exploration |
