@@ -8,18 +8,14 @@ Scripts, run in order:
 
 | Script | Description
 |---|---|
-| `00_Install_Packages.R` | One-time R package installation 
-| `01_Preprocessing_QC.R` | Per-sample QC, normalisation, clustering and scoring 
-| `02_Integration.R` | CCA integration, clustering and cell-type annotation 
-| `03_Pseudobulk.R` | Cell-type pseudobulk limma-voom DE and GO/KEGG analysis
+| `00_Install_Packages.R` | R package installation 
+| `01_Preprocessing_QC.R` | Per-sample QC
+| `02_Integration.R` | Integration, clustering and cell-type annotation 
+| `03_Pseudobulk.R` | Pseudobulk DE, GO/KEGG analysis
 
 `setup.R` and `config.R` are sourced in Scripts 01–03 automatically:  
 - `setup.R` defines packages, annotations, palettes and scoring helper functions;  
 - `config.R` defines paths, sample metadata and the pseudobulk helper.
-
-## Requirements
-- CellRanger output for each sample
-- Annotation files provided 
 
 ## Directory structure
 
