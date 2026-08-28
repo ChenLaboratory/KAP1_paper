@@ -1,6 +1,6 @@
 # Kap1 scRNA-seq Analysis Pipeline
 
-Analysis workflow for the scRNA-seq dataset from mouse mammary gland (WT vs. Kap1/Trim28 KO).  
+Analysis workflow for the scRNA-seq dataset.
 
 ## Workflow
 
