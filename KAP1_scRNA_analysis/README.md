@@ -14,21 +14,16 @@ Scripts, run in order:
 | `03_Pseudobulk.R` | Cell-type pseudobulk limma-voom DE and GO/KEGG analysis
 
 `setup.R` and `config.R` are sourced in Scripts 01–03 automatically:  
-`setup.R` defines packages, annotations, palettes and scoring helper functions;  
-`config.R` defines paths, sample metadata and the pseudobulk helper.
+- `setup.R` defines packages, annotations, palettes and scoring helper functions;  
+- `config.R` defines paths, sample metadata and the pseudobulk helper.
 
 ## Requirements
-
-- R installation compatible with the package versions available from CRAN/Bioconductor
 - CellRanger output for each sample
-- Annotation files listed below
-- Internet access for the initial package installation
-
-Run `00_Install_Packages.R` once before the first analysis.
+- Annotation files provided 
 
 ## Directory structure
 
-The repository should contain the scripts and annotation directory. Large CellRanger outputs and generated RDS/results should normally be kept outside GitHub and referenced through `config.R`.
+The repository should contain the scripts and annotation directory. 
 
 ```text
 <repository>/
