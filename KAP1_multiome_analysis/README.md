@@ -57,16 +57,10 @@ From the repository root:
 ```r
 setwd("path/to/this/repository")
 
-# Run once
 source("00_Install_Packages.R")
-
 source("01_Preprocessing_QC.R")
 source("02_Integration.R")
-
-# 03 pauses partway through for an external MACS2 run using the barcode
-# lists it exports; run MACS2, then continue sourcing the rest of the script.
 source("03_ATAC_Peak_Calling_and_Integration.R")
-
 source("04_scATAC.R")
 source("05_Pseudobulk_DE_DA.R")
 source("06_Pseudobulk_DE.R")
