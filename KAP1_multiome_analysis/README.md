@@ -17,29 +17,10 @@ Scripts, run in order:
 | `06_Pseudobulk_DE.R` | Pseudobulk limma-voom DE restricted to cycling vs. parental epithelial subclusters 
 
 `setup.R` and `config.R` are sourced in Scripts 01–06 automatically:  
-`setup.R` defines packages, annotations, palettes and scoring helper functions;  
-`config.R` defines paths, sample metadata, and the pseudobulk and peak-annotation helper functions.
-
-`03_ATAC_Peak_Calling_and_Integration.R` is intentionally split by an
-**external MACS2 run**: the first half exports per-cell-type barcode lists,
-MACS2 is then run outside R (one call per cell type) to produce
-`narrowPeak` files in `data/macs2/`, and the second half of the script
-picks up from there.
-
-## Requirements
-
-- R installation compatible with the package versions available from CRAN/Bioconductor
-- CellRanger ARC output for each sample
-- Annotation files 
-- [MACS2](https://github.com/macs3-project/MACS2), run externally for cell-type-aware peak calling (script 03)
-
-Run `00_Install_Packages.R` once before the first analysis.
+- `setup.R` defines packages, annotations, palettes and scoring helper functions;  
+- `config.R` defines paths, sample metadata, and the pseudobulk and peak-annotation helper functions.
 
 ## Directory structure
-
-The repository should contain the scripts and annotation directory. Large
-CellRanger/MACS2 outputs and generated RObjects/results should normally be
-kept outside GitHub and referenced through `config.R`.
 
 ```text
 <repository>/
