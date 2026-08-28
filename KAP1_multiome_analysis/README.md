@@ -1,6 +1,6 @@
 # Kap1 scMultiome Analysis Pipeline
 
-Analysis workflow for a single-cell multiome dataset (paired scRNA-seq + scATAC-seq) from mouse mammary gland (WT vs. Kap1/Trim28 KO). 
+Analysis workflow for the single-cell multiome dataset (paired scRNA-seq + scATAC-seq).
 
 ## Workflow
 
