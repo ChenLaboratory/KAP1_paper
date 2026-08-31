@@ -4,7 +4,7 @@ This repository contains the code to reproduce the analysis in the following pap
 <br> 
 **Kap1 maintains chromatin structure to ensure high fidelity hormone receptor signaling in the mammary gland**<br>
 <br> 
-Michael JG Milevskiy, Hao-Chun Chang, Felicity C Jackling, Felicia Ong, Malindrie Dharmaratne, Caleb Dawson, Somayeh Kordafshari, Elliot Surgenor, Minhsuang Tsai, Francois Vaillant, Hannah Coughlan, Lachlan Whitehead, Laura Marruecos, Geoffrey J Lindeman, Yunshun Chen
+Michael J.G. Milevskiy, Hao-Chun Chang, Felicity C Jackling, Felicia Ong, Malindrie Dharmaratne, Caleb Dawson, Somayeh Kordafshari, Elliot Surgenor, Minhsuang Tsai, Francois Vaillant, Hannah Coughlan, Lachlan Whitehead, Laura Marruecos, Geoffrey J Lindeman, Yunshun Chen and Jane E Visvader
 
 ## Workflows
 **Detailed setup and analysis instructions are provided in the respective subfolders:**
