@@ -49,16 +49,8 @@ From the repository root:
 ```r
 setwd("path/to/this/repository")
 
-# Run once
 source("00_Install_Packages.R")
-
-# Run once per sample. Change sample_name in 01_Preprocessing_QC.R
-# before each run.
-source("01_Preprocessing_QC.R")
-
-# Run after all four samples have been processed
+source("01_Preprocessing_QC.R") # Run once per sample. Change sample_name before each run.
 source("02_Integration.R")
-
-# Run after integration
 source("03_Pseudobulk.R")
 ```
